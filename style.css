@@ -819,20 +819,16 @@ a {
 }
 
 .project-link {
-    width: 60px;
-    height: 60px;
-    background: var(--gradient);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transform: scale(0.8);
-    transition: transform var(--transition-spring);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
-.project-image:hover .project-link {
-    transform: scale(1);
+.project-featured:hover {
+    border-color: var(--accent);
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.15);
 }
 
 .project-info {

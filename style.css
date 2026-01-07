@@ -1188,10 +1188,6 @@ a {
 }
 
 @media (max-width: 768px) {
-    .cursor-glow {
-        display: none;
-    }
-
     .section {
         padding: 4rem 1.5rem;
     }

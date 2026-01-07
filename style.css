@@ -53,6 +53,17 @@ a {
     color: white;
 }
 
+/* ===== Particle Canvas ===== */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
 /* ===== Loading Screen ===== */
 .loader {
     position: fixed;
@@ -75,14 +86,18 @@ a {
 }
 
 .loader-text {
-    font-size: 2rem;
-    font-weight: 700;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent);
     display: block;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#neural-loader {
+    width: 150px;
+    height: 150px;
 }
 
 .loader-bar {

@@ -61,30 +61,6 @@ window.addEventListener('load', () => {
     }, 2500);
 });
 
-// ===== Cursor Glow Effect =====
-const cursorGlow = document.querySelector('.cursor-glow');
-let mouseX = 0, mouseY = 0;
-let glowX = 0, glowY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-// Smooth cursor follow
-function animateCursor() {
-    glowX += (mouseX - glowX) * 0.1;
-    glowY += (mouseY - glowY) * 0.1;
-
-    if (cursorGlow) {
-        cursorGlow.style.left = glowX + 'px';
-        cursorGlow.style.top = glowY + 'px';
-    }
-
-    requestAnimationFrame(animateCursor);
-}
-animateCursor();
-
 // ===== Particle Background =====
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');

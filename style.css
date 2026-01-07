@@ -53,18 +53,6 @@ a {
     color: white;
 }
 
-/* ===== Custom Cursor ===== */
-.cursor-glow {
-    position: fixed;
-    width: 400px;
-    height: 400px;
-    pointer-events: none;
-    z-index: 9999;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
-}
-
 /* ===== Particle Canvas ===== */
 #particles {
     position: fixed;

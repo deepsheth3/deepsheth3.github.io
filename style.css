@@ -891,11 +891,15 @@ a {
 }
 
 .project-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 2rem;
     transition: all var(--transition-smooth);
+    cursor: pointer;
 }
 
 .project-card:hover {

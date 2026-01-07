@@ -41,7 +41,6 @@ body {
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
-    cursor: none;
 }
 
 a {
@@ -99,14 +98,18 @@ a {
 }
 
 .loader-text {
-    font-size: 3rem;
-    font-weight: 700;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent);
     display: block;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#neural-loader {
+    width: 150px;
+    height: 150px;
 }
 
 .loader-bar {
@@ -524,6 +527,11 @@ a {
 
 .string {
     color: #f1fa8c;
+}
+
+.comment {
+    color: #6272a4;
+    font-style: italic;
 }
 
 .cursor {
@@ -1192,10 +1200,6 @@ a {
 }
 
 @media (max-width: 768px) {
-    body {
-        cursor: auto;
-    }
-
     .cursor-glow {
         display: none;
     }

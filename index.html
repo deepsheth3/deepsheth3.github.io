@@ -25,7 +25,8 @@
     <!-- Loading Screen -->
     <div class="loader">
         <div class="loader-content">
-            <span class="loader-text">DS</span>
+            <canvas id="neural-loader"></canvas>
+            <span class="loader-text">Initializing Neural Network...</span>
             <div class="loader-bar"></div>
         </div>
     </div>
@@ -99,17 +100,17 @@
                     <span></span><span></span><span></span>
                 </div>
                 <div class="code-content">
-                    <pre><code><span class="line-number">1</span>  <span class="keyword">class</span> <span class="class">DeepSheth</span>:
-<span class="line-number">2</span>      <span class="keyword">def</span> <span class="function">__init__</span>(self):
-<span class="line-number">3</span>          self.role = <span class="string">"ML Engineer"</span>
-<span class="line-number">4</span>          self.focus = [
-<span class="line-number">5</span>              <span class="string">"AI Agents"</span>,
-<span class="line-number">6</span>              <span class="string">"GPU Computing"</span>,
-<span class="line-number">7</span>              <span class="string">"LLM Systems"</span>
-<span class="line-number">8</span>          ]
-<span class="line-number">9</span>
-<span class="line-number">10</span>     <span class="keyword">def</span> <span class="function">ship</span>(self, idea):
-<span class="line-number">11</span>         <span class="keyword">return</span> Production(idea)<span class="cursor">|</span></code></pre>
+                    <pre><code><span class="line-number">1</span>  <span class="comment"># Training AI Agents</span>
+<span class="line-number">2</span>  <span class="keyword">import</span> torch
+<span class="line-number">3</span>  <span class="keyword">from</span> transformers <span class="keyword">import</span> GPT4
+<span class="line-number">4</span>
+<span class="line-number">5</span>  <span class="keyword">class</span> <span class="class">DeepSheth</span>(nn.Module):
+<span class="line-number">6</span>      <span class="keyword">def</span> <span class="function">forward</span>(self, x):
+<span class="line-number">7</span>          x = self.attention(x)
+<span class="line-number">8</span>          x = self.reasoning(x)
+<span class="line-number">9</span>          <span class="keyword">return</span> self.agent.act(x)
+<span class="line-number">10</span>
+<span class="line-number">11</span> <span class="comment"># Loss: 0.001 | Acc: 99.9%</span><span class="cursor">|</span></code></pre>
                 </div>
             </div>
         </div>

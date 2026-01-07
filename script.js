@@ -1,8 +1,64 @@
+// ===== Neural Network Loader Animation =====
+const neuralCanvas = document.getElementById('neural-loader');
+if (neuralCanvas) {
+    const nCtx = neuralCanvas.getContext('2d');
+    neuralCanvas.width = 150;
+    neuralCanvas.height = 150;
+
+    const nodes = [];
+    const layers = [3, 4, 4, 2];
+    const layerSpacing = 35;
+    const startX = 20;
+
+    // Create nodes
+    layers.forEach((count, layerIndex) => {
+        const x = startX + layerIndex * layerSpacing;
+        for (let i = 0; i < count; i++) {
+            const y = (150 - (count - 1) * 25) / 2 + i * 25;
+            nodes.push({ x, y, layer: layerIndex, activation: Math.random() });
+        }
+    });
+
+    let frame = 0;
+    function drawNetwork() {
+        nCtx.clearRect(0, 0, 150, 150);
+
+        // Draw connections
+        nodes.forEach(node => {
+            const nextLayerNodes = nodes.filter(n => n.layer === node.layer + 1);
+            nextLayerNodes.forEach(next => {
+                const pulse = (Math.sin(frame * 0.05 + node.y * 0.1) + 1) / 2;
+                nCtx.beginPath();
+                nCtx.strokeStyle = `rgba(99, 102, 241, ${0.1 + pulse * 0.3})`;
+                nCtx.lineWidth = 1;
+                nCtx.moveTo(node.x, node.y);
+                nCtx.lineTo(next.x, next.y);
+                nCtx.stroke();
+            });
+        });
+
+        // Draw nodes
+        nodes.forEach(node => {
+            const pulse = (Math.sin(frame * 0.08 + node.layer * 2) + 1) / 2;
+            nCtx.beginPath();
+            nCtx.arc(node.x, node.y, 4 + pulse * 2, 0, Math.PI * 2);
+            nCtx.fillStyle = `rgba(99, 102, 241, ${0.5 + pulse * 0.5})`;
+            nCtx.fill();
+        });
+
+        frame++;
+        if (!document.querySelector('.loader.hidden')) {
+            requestAnimationFrame(drawNetwork);
+        }
+    }
+    drawNetwork();
+}
+
 // ===== Loading Screen =====
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.querySelector('.loader').classList.add('hidden');
-    }, 2000);
+    }, 2500);
 });
 
 // ===== Cursor Glow Effect =====

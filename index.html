@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Sheth | ML Engineer</title>
+    <meta name="description"
+        content="Deep Sheth - ML Engineer building AI Agents that think, plan, and execute. USC MS CS '25.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <span class="loader-text">DS</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">DS</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <a href="https://github.com/deepsheth3" class="nav-cta magnetic" target="_blank">
+                <span>GitHub</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name reveal-up delay-1">
+                <span class="name-line">Deep</span>
+                <span class="name-line">Sheth<span class="accent-dot">.</span></span>
+            </h1>
+            <p class="hero-title reveal-up delay-2">
+                <span class="title-word">ML Engineer</span>
+                <span class="title-divider">—</span>
+                <span class="title-word">Building AI Agents</span>
+            </p>
+            <p class="hero-description reveal-up delay-3">
+                I build AI systems that reason, plan, and act. Currently pursuing MS CS at USC,
+                previously engineering GPU-accelerated pipelines at Cadence Design Systems.
+            </p>
+            <div class="hero-cta reveal-up delay-4">
+                <a href="#projects" class="btn btn-primary magnetic">
+                    <span>View Projects</span>
+                    <div class="btn-glow"></div>
+                </a>
+                <a href="#contact" class="btn btn-ghost magnetic">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-scroll reveal-up delay-5">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+        <div class="hero-visual reveal-right">
+            <div class="code-window">
+                <div class="window-controls">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="line-number">1</span>  <span class="keyword">class</span> <span class="class">DeepSheth</span>:
+<span class="line-number">2</span>      <span class="keyword">def</span> <span class="function">__init__</span>(self):
+<span class="line-number">3</span>          self.role = <span class="string">"ML Engineer"</span>
+<span class="line-number">4</span>          self.focus = [
+<span class="line-number">5</span>              <span class="string">"AI Agents"</span>,
+<span class="line-number">6</span>              <span class="string">"GPU Computing"</span>,
+<span class="line-number">7</span>              <span class="string">"LLM Systems"</span>
+<span class="line-number">8</span>          ]
+<span class="line-number">9</span>
+<span class="line-number">10</span>     <span class="keyword">def</span> <span class="function">ship</span>(self, idea):
+<span class="line-number">11</span>         <span class="keyword">return</span> Production(idea)<span class="cursor">|</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title reveal-up">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p class="text-large">
+                        I'm a Master's student in Computer Science at <span class="highlight">USC</span>,
+                        graduating December 2025. My passion lies at the intersection of
+                        <span class="highlight">AI systems</span>, <span class="highlight">high-performance
+                            computing</span>,
+                        and <span class="highlight">product development</span>.
+                    </p>
+                    <p>
+                        At <strong>Cadence Design Systems</strong>, I engineered GPU-accelerated compute pipelines
+                        and built production RAG systems handling millions of logs. At <strong>Persistent
+                            Systems</strong>,
+                        I shipped ML models serving 220K+ users with 99.9% uptime.
+                    </p>
+                    <p>
+                        When I'm not coding, I'm building an AI travel planner (Odyssey),
+                        brewing the perfect espresso, or solving LeetCode problems.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card reveal-up delay-1">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card reveal-up delay-2">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-suffix">M+</span>
+                        <span class="stat-label">Logs Processed</span>
+                    </div>
+                    <div class="stat-card reveal-up delay-3">
+                        <span class="stat-number" data-count="220">0</span>
+                        <span class="stat-suffix">K+</span>
+                        <span class="stat-label">Users Served</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title reveal-up">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-list">
+                <div class="experience-card reveal-up">
+                    <div class="exp-timeline">
+                        <div class="exp-dot"></div>
+                        <div class="exp-line"></div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Machine Learning Engineer Intern</h3>
+                                <a href="#" class="exp-company">Cadence Design Systems</a>
+                            </div>
+                            <span class="exp-date">Jun 2025 – Aug 2025</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Engineered <span class="tag">GPU-accelerated</span> compute kernel pipelines for
+                                high-throughput data analysis</li>
+                            <li>Built hybrid <span class="tag">RAG</span> systems with ChromaDB & LangChain, optimizing
+                                retrieval by 35%</li>
+                            <li>Performed <span class="tag">LLM optimization</span> on 10M+ logs for real-time query
+                                resolution</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card reveal-up delay-1">
+                    <div class="exp-timeline">
+                        <div class="exp-dot"></div>
+                        <div class="exp-line"></div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <a href="#" class="exp-company">Persistent Systems</a>
+                            </div>
+                            <span class="exp-date">Jul 2022 – Nov 2023</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Shipped production <span class="tag">AI APIs</span> on AWS serving 220K+ users with
+                                sub-100ms latency</li>
+                            <li>Architected <span class="tag">REST APIs</span> and <span class="tag">CI/CD</span>
+                                pipelines using AWS Lambda</li>
+                            <li>Built <span class="tag">CNN</span> for lung cancer detection, cutting false positives by
+                                62%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-card reveal-up delay-2">
+                    <div class="exp-timeline">
+                        <div class="exp-dot"></div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3>Software Engineer Intern</h3>
+                                <a href="#" class="exp-company">C-DAC</a>
+                            </div>
+                            <span class="exp-date">Jun 2021 – Jan 2022</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Built <span class="tag">BERT</span> + <span class="tag">Neo4j</span> pipeline achieving
+                                92% accuracy on COVID-19 knowledge graphs</li>
+                            <li>Parallelized <span class="tag">PySpark</span> ETL jobs, reducing preprocessing time by
+                                35%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title reveal-up">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-showcase">
+                <!-- Featured Project -->
+                <div class="project-featured reveal-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/deepsheth3/Odyssey" target="_blank"
+                                class="project-link magnetic">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="project-visual">
+                            <div class="visual-grid"></div>
+                            <span class="visual-icon">🗺️</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">Odyssey</h3>
+                        <p class="project-subtitle">AI-Powered Travel Planner with Zero Backtracking</p>
+                        <p class="project-description">
+                            Multi-step AI agent that orchestrates GPT-4, Google Maps, and geospatial analytics
+                            to generate optimized travel itineraries. Features ReAct pattern implementation
+                            and real-time distance matrix calculations.
+                        </p>
+                        <div class="project-tech">
+                            <span>GPT-4</span>
+                            <span>FastAPI</span>
+                            <span>Next.js</span>
+                            <span>LangChain</span>
+                            <span>Google Maps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <div class="project-card reveal-up delay-1">
+                        <div class="card-header">
+                            <span class="card-icon">⚡</span>
+                            <a href="https://github.com/deepsheth3/Parallel_PageRank" target="_blank" class="card-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4>PageRank CUDA</h4>
+                        <p>7x GPU speedup on NVIDIA A100. Kernel time: 9.3s → 1.3s with memory tiling optimization.</p>
+                        <div class="card-tech">
+                            <span>C++</span>
+                            <span>CUDA</span>
+                            <span>A100</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up delay-2">
+                        <div class="card-header">
+                            <span class="card-icon">🔍</span>
+                            <a href="https://github.com/deepsheth3/RAG-Search-with-FastAPI-and-Next.js" target="_blank"
+                                class="card-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4>RAG Search</h4>
+                        <p>Full RAG architecture with FastAPI backend and Next.js frontend. Vector search with
+                            LangChain.</p>
+                        <div class="card-tech">
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up delay-3">
+                        <div class="card-header">
+                            <span class="card-icon">🤖</span>
+                            <a href="https://github.com/deepsheth3/Chat-GPT-from-Scratch" target="_blank"
+                                class="card-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4>ChatGPT from Scratch</h4>
+                        <p>Built a GPT model from scratch following Karpathy's approach. Full transformer architecture.
+                        </p>
+                        <div class="card-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                        </div>
+                    </div>
+                    <div class="project-card reveal-up delay-4">
+                        <div class="card-header">
+                            <span class="card-icon">🏥</span>
+                            <a href="https://github.com/deepsheth3/HIA" target="_blank" class="card-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4>HIA - Health Agent</h4>
+                        <p>Agentic health insight application using AI to analyze and provide personalized
+                            recommendations.</p>
+                        <div class="card-tech">
+                            <span>Python</span>
+                            <span>AI Agents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://github.com/deepsheth3?tab=repositories" target="_blank" class="view-all reveal-up">
+                    View All Projects
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title reveal-up">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-group reveal-up">
+                    <h3>Languages</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">C++</span>
+                        <span class="pill">C</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">CUDA</span>
+                        <span class="pill">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal-up delay-1">
+                    <h3>AI / ML</h3>
+                    <div class="skill-pills">
+                        <span class="pill accent">PyTorch</span>
+                        <span class="pill accent">LangChain</span>
+                        <span class="pill accent">OpenAI</span>
+                        <span class="pill accent">HuggingFace</span>
+                        <span class="pill accent">RAG</span>
+                        <span class="pill accent">AI Agents</span>
+                        <span class="pill accent">Transformers</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal-up delay-2">
+                    <h3>Infrastructure</h3>
+                    <div class="skill-pills">
+                        <span class="pill">AWS</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Kubernetes</span>
+                        <span class="pill">FastAPI</span>
+                        <span class="pill">Next.js</span>
+                        <span class="pill">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal-up delay-3">
+                    <h3>Databases</h3>
+                    <div class="skill-pills">
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill">ChromaDB</span>
+                        <span class="pill">Neo4j</span>
+                        <span class="pill">MongoDB</span>
+                        <span class="pill">FAISS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title reveal-up">Let's Connect</h2>
+                    <div class="section-line"></div>
+                </div>
+                <p class="contact-intro reveal-up">
+                    I'm always open to discussing new opportunities, interesting projects,
+                    or just chatting about AI and technology.
+                </p>
+                <a href="mailto:deepsheth3@gmail.com" class="contact-email reveal-up magnetic">
+                    deepsheth3@gmail.com
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+                <div class="contact-links reveal-up">
+                    <a href="https://linkedin.com/in/deepsheth3" target="_blank" class="social-link magnetic">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/deepsheth3" target="_blank" class="social-link magnetic">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:deepsheth3@gmail.com" class="social-link magnetic">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Designed & Built by Deep Sheth</p>
+                <p class="footer-quote">"Ship fast. Measure everything. Iterate."</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
